@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>My website</title>
+    <style>
+        
+        body {
+            padding: 0;
+            margin: 0;
+        }
+        /* ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(201, 195, 195);
+  border: 15px black;
+  box-shadow: aqua;
+  padding-bottom: 800px;
+  border-radius: 10px;
+} */
+/* .button {
+        background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+      } */
+
+       
+
+     
+      
+     
+
+        div.page {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 60px 30fr 40px;
+            grid-template-areas: 'header header' 
+                                 'menu mainContent'
+                                 'footer footer';
+        }
+
+        div.header {
+            background-color: rgb(50, 142, 158);
+            grid-area: header;
+            text-align: center;
+            font-size: 400%;
+            color:lavender
+           
+            }
+            .header {
+                background-image: url(sky.jpg);
+                background-repeat: no-repeat; 
+                background-size: 100%;
+            }
+      
+        ul, li {
+    list-style: none;
+}
+
+        div.menu {
+            background-color: rgb(58, 61, 63);
+            text-align: center;
+            grid-area: menu; 
+            font-size: 130%;
+            font-family: arial;
+            padding: 0
+            margin: 0;
+    
+            /* background-image: url(Water-Overview_i1140.jpg); */
+            /* background-image: url(dupp.jpg); */
+            background-repeat: no-repeat;
+            /* background-size: cover;  */
+            background-size: 400% 100%;
+            /* background-attachment:fixed; */
+                
+            
+      }
+
+    
+
+        div.mainContent {
+            background-color: rgb(201, 195, 195);
+            grid-area: mainContent;
+            text-align-last:left
+            color: black;
+            font-size: 130%;
+            font-family: arial;
+            
+            background-image: url(skog.jpg);
+            background-repeat: no-repeat;
+            background-size: 190%;
+        
+        }
+
+        div.footer {
+            background-color: rgb(119, 119, 119);
+            grid-area: footer;
+        }
+
+        /* a {
+            background-color: #1c87c9;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+        } */
+        .menuknapp {
+            background-color: #1c3544;
+        border: none;
+        color: white;
+        padding: 20px 34px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 5px 3px;
+        cursor: pointer;
+        }
+ #Home {
+    margin: 4px 0px;
+    padding: 20px 35px;
+    float: left;
+    
+ }
+ #Links {
+     padding: 20px 38px;
+     margin: 4px 0px;
+     float: left;
+ }
+ #About {
+     padding: 20px 35.5px;
+     margin: 4px 0px;
+     float:left;
+     
+ }
+ #Gallery {
+     padding: 20px 30px;
+     margin: 4px 0px;
+     float: left;
+ }
+        @media only screen and (max-width: 600px) {
+            div.page {
+                grid-template-columns: 1fr;
+                grid-template-rows: 20px 1fr 4fr 20px;
+                grid-template-areas: 'header' 
+                                     'menu'
+                                     'mainContent'
+                                     'footer';
+            }
+          
+
+
+
+
+
+/* <h2> text-align: center; </h2> */
+
+
+
+/* ul, li {
+    list-style: none;
+} */
+
+
+
+
+/* .ulMeny {
+ list-style:none;
+} */
+        
+    </style>
+</head>
+<body>
+
+        <div class="page">
+        <div class="header">My website</div>
+        <div class="menu"> <h1>Menu</h1>
+            <ul>
+            <li><a class="menuknapp" id="Home" href="https://www.vg.no">Home</a></li>
+            <li><a class="menuknapp" id="Gallery" href="https://www.google.com/search?q=Fish&sxsrf=ALeKk00aQsX7ehl1eqwxi0OZWDpZWpz3hg:1621599908268&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiGrv-z4trwAhXoxIsKHUqBDTkQ_AUoAXoECAIQAw&biw=1920&bih=969">Gallery</a></li>
+            <li><a class="menuknapp" id="Links" href="#">Links</a></li>
+            <li><a class="menuknapp" id="About" href="#">About</a></li>
+            </ul>
+                
+            </div>
+
+        <div class="mainContent">
+            <h2> Home page </h2>
+          
+           Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           <hr> Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            <hr> Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
+        <div class="footer"></div>
+    </div>
+    <script> 
+
+    </script> 
+ 
+</body>
+</html>
