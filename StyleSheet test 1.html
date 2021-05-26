@@ -10,30 +10,27 @@
             padding: 0;
             margin: 0;
         }
-        /* ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: rgb(201, 195, 195);
-  border: 15px black;
-  box-shadow: aqua;
-  padding-bottom: 800px;
-  border-radius: 10px;
-} */
-/* .button {
-        background-color: #1c87c9;
-        border: none;
-        color: white;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 4px 2px;
-        cursor: pointer;
-      } */
 
-       
+        ::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 5px grey;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgb(122, 115, 115);
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b30000;
+        }
+
+
+  
 
      
       
@@ -46,7 +43,7 @@
             grid-template-rows: 60px 30fr 40px;
             grid-template-areas: 'header header' 
                                  'menu mainContent'
-                                 'footer footer';
+                                 'menu footer';
         }
 
         div.header {
@@ -54,7 +51,9 @@
             grid-area: header;
             text-align: center;
             font-size: 400%;
-            color:rgb(3, 3, 3)
+            color:rgb(231, 226, 226)
+            
+            
            
             }
             .header {
@@ -63,7 +62,9 @@
                 /* background-image: url(night.jpg); */
                 background-repeat: no-repeat; 
                 background-size: 100%;
-                opacity: 100%; */
+                background-image: linear-gradient(to right, rgb(3, 3, 3), rgb(76, 69, 69));              
+                text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+                
             }
       
         ul, li {
@@ -76,8 +77,11 @@
             grid-area: menu; 
             font-size: 130%;
             font-family: arial;
-            padding: 0
+            padding: 0;
             margin: 0;
+            background: -webkit-linear-gradient(rgb(7, 6, 6), rgb(80, 73, 73));
+            
+            
             
     
             /* background-image: url(skog.jpg); */
@@ -89,6 +93,7 @@
                 
             
       }
+      
 
     
 
@@ -102,10 +107,14 @@
             
             background-image: url(skog.jpg);
             background-repeat: no-repeat;
-            background-size: 200%;
+            background-size: cover;
+            
+            
             
         
         }
+        
+
         .mainContent {
             color: rgb(219, 129, 55);
             font-style:oblique;
@@ -117,18 +126,7 @@
             grid-area: footer;
         }
 
-        /* a {
-            background-color: #1c87c9;
-        border: none;
-        color: white;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 20px;
-        margin: 4px 2px;
-        cursor: pointer;
-        } */
+        
         .menuknapp {
             background-color: #1c3544;
         border: none;
@@ -140,28 +138,41 @@
         font-size: 20px;
         margin: 5px 3px;
         cursor: pointer;
+        box-shadow: 2px 2px rgb(100, 96, 96);
+        
         }
+
+
  #Home {
     margin: 4px 0px;
     padding: 20px 35px;
     float: left;
-    
+    color: white;
+    hover: 
+  /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
  }
+
  #Links {
      padding: 20px 38px;
      margin: 4px 0px;
      float: left;
+     color: white;
+  /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
  }
  #About {
      padding: 20px 35.5px;
      margin: 4px 0px;
      float:left;
+     color: white;
+  /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
      
  }
  #Gallery {
      padding: 20px 30px;
      margin: 4px 0px;
      float: left;
+     color: white;
+  /* text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue; */
  }
         @media only screen and (max-width: 600px) {
             div.page {
@@ -172,37 +183,27 @@
                                      'mainContent'
                                      'footer';
             }
-          
+     
 
 
 
 
 
-/* <h2> text-align: center; </h2> */
 
-
-
-/* ul, li {
-    list-style: none;
-} */
-
-
-
-
-/* .ulMeny {
- list-style:none;
-} */
         
     </style>
 </head>
 <body>
+
+
+
 
         <div class="page">
         <div class="header">My website</div>
         <div class="menu"> <h1>Menu</h1>
             <ul>
             <li><a class="menuknapp" id="Home" href="https://www.vg.no">Home</a></li>
-            <li><a class="menuknapp" id="Gallery" href="https://www.google.com/search?q=Fish&sxsrf=ALeKk00aQsX7ehl1eqwxi0OZWDpZWpz3hg:1621599908268&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiGrv-z4trwAhXoxIsKHUqBDTkQ_AUoAXoECAIQAw&biw=1920&bih=969">Gallery</a></li>
+            <li><a class="menuknapp" id="Gallery" href="https://www.google.com/search?q=dark+forest&sxsrf=ALeKk01GFw80txUSrZS5GFymS3lqrMy7qQ:1622016257062&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi0tcm28ebwAhXGwosKHWNbBicQ_AUoAXoECAEQAw&biw=1920&bih=969">Gallery</a></li>
             <li><a class="menuknapp" id="Links" href="#">Links</a></li>
             <li><a class="menuknapp" id="About" href="#">About</a></li>
             </ul>
@@ -223,13 +224,55 @@
             <hr> Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           <hr> Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+            <hr> Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           <hr> Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+           bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
            bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla</div>
         <div class="footer"></div>
        
     </div>
-    <script> 
-
-    </script> 
+    <style> 
+       h1 {
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+           color: rgb(255, 253, 253);
+       }
+       
+       .menuknapp:hover {
+           color: red;
+       }
+       .menuknapp::before {
+           content: ;
+           position: absolute;
+           left: 0;
+           width: 100%;
+           height: 0%;
+           background: green;
+           z-index: -1;
+           transition: 0.8s;
+       }
+       .menuknapp::before {
+           top: 0;
+           border-radius: 0 0 50% 50%;
+       }
+       .menuknapp::before {
+           bottom: 0;
+           border-radius: 50% 50% 0 0;
+       }
+     
+    </style> 
  
 </body>
 </html>
